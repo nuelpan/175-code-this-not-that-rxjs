@@ -8,10 +8,12 @@ const tapped = source.pipe(
     map(v => v.toUpperCase()),
     tap(console.log),
     map(v => `Hello 🐟 ${v}`),
-    tap(async v => {
-        await Promise.resolve();
-        alert(v);
-    })
+    // tap(console.log)
+    // tap(async v => {
+    //     // do API call here
+    //     await Promise.resolve();
+    //     alert(v);
+    // })
 )
 
 tapped.subscribe();

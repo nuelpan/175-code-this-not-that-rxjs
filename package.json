@@ -5,10 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack -w"
+    "build": "webpack -w --mode=development"
   },
   "keywords": [],
-  "author": "Jeff Delaney",
+  "author": "",
   "license": "ISC",
   "dependencies": {
     "rxjs": "^6.4.0"

@@ -5,14 +5,14 @@ const event = fromEvent(document, 'mousemove').pipe(map(_ => Math.random() + 'ðŸ
 
 // event.subscribe(console.log)
 
-const debounced = event.pipe(debounceTime(1000));
+// const debounced = event.pipe(debounceTime(1000));
 
-debounced.subscribe(console.log);
+// debounced.subscribe(console.log);
 
-const throttled = event.pipe(throttleTime(1000));
+// const throttled = event.pipe(throttleTime(1000));
 
 // throttled.subscribe(console.log);
 
-const buffered = event.pipe(bufferCount(20));
+// const buffered = event.pipe(bufferCount(20));
 
 // buffered.subscribe(console.log);
